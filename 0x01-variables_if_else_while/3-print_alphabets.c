@@ -3,13 +3,13 @@
 /**
 *print the alphabet in lowercase
 *
-*At 02h45 to 18/03/2023
+*Return (0) to confirme the succes
 */
 int main(void)
 {
 	char alp_l_u[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int i;
 	
+	int i;
 	for (i = 0; i < 52; i++)
 	{
 		putchar(alp_l_u[i]);
