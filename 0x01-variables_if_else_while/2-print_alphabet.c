@@ -1,10 +1,12 @@
 #include <stdio.h>
 
+
 /**
-*Print the alphabec in lowercase
-*
-*Followed by new line
-*/
+ * main - Prints the alphabet at 02h35.
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
