@@ -2,7 +2,7 @@
 
 /**
 *Print the alphabec in lowercase
-*At 02h15 AM the 18/03/2023
+*
 *Followed by new line
 */
 int main(void)
