@@ -1,5 +1,28 @@
 #include "main.h"
 
+int actualint_sqrt_recursion(int n, int i);
+
+/**
+ * _sqrt_recursion -  returns the natural square root of a number
+ *
+ * @n: number to be squared
+ *
+ * Return: the square of the number
+ */
+int _sqrt_recursion(int n)
+{
+        if (n < 0)
+        {
+                return (-1);
+        }
+        else
+        {
+                return (actualint_sqrt_recursion(n, 0));
+        }
+
+}
+
+
 /**
  * actual_sqrt_recursion - Calculate actual  square
  *
@@ -23,24 +46,4 @@ int actualint_sqrt_recursion(int n, int i)
 	{
 		return (actualint_sqrt_recursion(n, i + 1));
 	}
-}
-
-/**
- * _sqrt_recursion -  returns the natural square root of a number
- *
- * @n: number to be squared
- *
- * Return: the square of the number
- */
-int _sqrt_recursion(int n)
-{
-	if (n < 0)
-	{
-		return (-1);
-	}
-	else
-	{
-		return (actualint_sqrt_recursion(n, 0));
-	}
-
 }
