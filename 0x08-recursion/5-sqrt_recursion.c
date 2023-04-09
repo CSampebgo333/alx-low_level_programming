@@ -9,7 +9,7 @@
  *
  * Return: square root
  */
-int actualint_sqrt_recursion(int n, int i);
+int actualint_sqrt_recursion(int n, int i)
 {
 	if (i * i > n)
 	{
