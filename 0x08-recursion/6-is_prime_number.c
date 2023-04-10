@@ -3,7 +3,7 @@
 int actual_prime(int n, int i);
 
 /**
- * is_prime_number -  returns 1 if the input integer is a prime number, otherwise return 0
+ * is_prime_number -  returns 1 if the integer is prime, else return 0
  *
  * @n: The number to be checked
  *
@@ -17,14 +17,14 @@ int is_prime_number(int n)
 	}
 	else
 	{
-		return (actual_prime(n, n-1));
+		return (actual_prime(n, n - 1));
 	}
 }
 
 /**
  * actual_prime - return 1 if n is prime number else if return 0
  *
- * @n: The number to be checked 
+ * @n: The number to be checked
  *
  * @i: iterator
  *
@@ -42,6 +42,6 @@ int actual_prime(int n, int i)
 	}
 	else
 	{
-		return (actual_prime(n, i-1));
+		return (actual_prime(n, i - 1));
 	}
 }
