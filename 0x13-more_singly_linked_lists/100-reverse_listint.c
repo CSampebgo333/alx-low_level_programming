@@ -2,7 +2,6 @@
 
 /**
  * reverse_listint - the function that reverses a listint_t
- *
  * @head: double pointer
  *
  * Return: a pointer to the first node of the reversed list
