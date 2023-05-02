@@ -3,11 +3,8 @@
 
 /**
  * _strncpy - copie a string
- *
  * @dest: the string to be complet
- *
  * @src: the string to be copied
- *
  * @n: numbre of character to be appended
  *
  * Return: copied string
