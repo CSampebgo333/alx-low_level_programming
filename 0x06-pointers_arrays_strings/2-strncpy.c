@@ -3,31 +3,23 @@
 
 /**
  * _strncpy - copie a string
- *
  * @dest: the string to be complet
- *
  * @src: the string to be copied
- *
  * @n: numbre of character to be appended
  *
  * Return: copied string
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0, count = 0;
+	int i;
 
-	while (src[i] && n > 0)
+	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
 		dest[i] = src[i];
-		i++;
-		n--;
-		count += 1;
 	}
-
-	if (src[count] == '\0')
+	for (; i < n; i++)
 	{
-		dest[count] = '\0';
+		dest[i] = '\0';
 	}
 	return (dest);
 }
-
