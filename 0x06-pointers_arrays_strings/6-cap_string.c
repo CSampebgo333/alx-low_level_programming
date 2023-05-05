@@ -21,20 +21,19 @@ char *cap_string(char *str)
 			}
 			else
 			{
-				for (j = 0; c[j]; j++)
+				for (j = 0; j < 13; j++)
 				{
 					if (str[i - 1] == c[j])
 					{
 						str[i] = str[i] - 32;
 					}
-
-					if (str[i - 1] == '\t')
-					{
-						str[i - 1] = ' ';
-						str[i] = str[i] - 32;
-					}
 				}
 			}
+		}
+
+		if (str[i] == '\t')
+		{
+			str[i] = ' ';
 		}
 		i++;
 	}
