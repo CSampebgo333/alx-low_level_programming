@@ -11,5 +11,6 @@ char *string_toupper(char *let);
 char *cap_string(char *str);
 char *leet(char *let);
 char *rot13(char *rot);
+void print_number(int n);
 
 #endif
