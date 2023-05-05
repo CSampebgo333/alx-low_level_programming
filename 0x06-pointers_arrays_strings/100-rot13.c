@@ -9,12 +9,12 @@
 char *rot13(char *rot)
 {
 	int i, j;
-	char *a = "AaBbCcDdEeFfGgHhIiJjKkLlMm";
-	char *n = "NnOoPpQqRrSsTtUuVvWwXxYyZz";
+	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char n[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (i = 0; rot[i]; i++)
 	{
-		for (j = 0; j < 26; j++)
+		for (j = 0; j < 52; j++)
 		{
 			if (rot[i] == a[j])
 			{
